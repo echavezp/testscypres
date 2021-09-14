@@ -1,15 +1,19 @@
 describe('Validate', () => {
   beforeEach(() => {
-    cy.visit('https://demoqa.com/webtables')
+    cy.visit('https://www.saucedemo.com/')
   })
-  it('add registry', function () {
-    cy.get('#addNewRecordButton').click()
-    cy.get('#firstName').clear().type('pruebas')
-    cy.get('#lastName').clear().type('apellido')
-    cy.get('#userEmail').clear().type('ed@t.com')
-    cy.get('#age').clear().type('30')
-    cy.get('#salary').clear().type('5')
-    cy.get('#department').clear().type('GT')
-    cy.get('#submit').click()
+
+  it('test login', () => {
+    cy.get('#user-name').clear().type('standard_user')
+    cy.get('#password').clear().type('secret_sauce')
+    cy.get('#login-button').click()
+    cy.contains('span', 'Productss')
+  })
+
+  it('test login fail', () => {
+    cy.get('#user-name').clear().type('standard_user11')
+    cy.get('#password').clear().type('secret_sauce')
+    cy.get('#login-button').click()
+    cy.contains('Epic sadface: Username and password do not match any user in this service')
   })
 })
