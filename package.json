@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "cypress:chrome": "cypress run --browser chrome --spec cypress/integration/*.spec.js",
-    "cypress:report": "cypress run --browser chrome --spec cypress/integration/*.spec.js --reporter mochawesome"
+    "cypress:kansas": "cypress run --browser chrome --spec cypress/integration/kansas/*.spec.js"
   },
   "keywords": [],
   "author": "",
