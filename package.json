@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "cypress:chrome": "cypress run --browser chrome --spec cypress/integration/*.spec.js",
-    "cypress:kansas": "cypress run --browser chrome --spec cypress/integration/kansas/*.spec.js"
+    "cypress:chrome": "cypress run --browser chrome --spec cypress/integration/kansas/*.spec.js",
+    "cypress:kansas": "cypress run --browser firefox --spec cypress/integration/kansas/*.spec.js"
   },
   "keywords": [],
   "author": "",
