@@ -14,7 +14,7 @@ describe('Validate User', () => {
     cy.get('[data-vv-name="first_name"]').clear().type('prb')
     cy.get('[data-vv-name="last_name"]').clear().type('cypress')
     cy.get('[data-vv-name="email"]').clear().type('echavezp@tigo.com.gt')
-    cy.get('[data-vv-name="msisdn"]').clear().type('40008245')
+    cy.get('[data-vv-name="msisdn"]').clear().type('40000000')
     cy.get('[data-vv-name="role"]').first().click()
     cy.get(':nth-child(1) > .md-list-item-button > .md-list-item-content > .md-list-item-text').click()
     cy.get('[data-vv-name="password"]').clear().type('Aa123456!')
